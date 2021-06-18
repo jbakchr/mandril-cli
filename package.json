@@ -1,0 +1,27 @@
+{
+  "name": "mandril-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "enquirer": "^2.3.6",
+    "figlet": "^1.5.0",
+    "terminal-image": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbakchr/mandril-cli.git"
+  },
+  "keywords": [],
+  "author": "Jonas Bak Phillipson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbakchr/mandril-cli/issues"
+  },
+  "homepage": "https://github.com/jbakchr/mandril-cli#readme"
+}
