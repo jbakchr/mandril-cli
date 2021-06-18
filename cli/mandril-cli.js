@@ -1,3 +1,5 @@
+const Header = require("./components/header");
+
 class MandrilCLI {
   constructor() {}
 
@@ -6,7 +8,8 @@ class MandrilCLI {
   }
 
   printMainScreen() {
-    console.log("Printing main screen");
+    const header = new Header();
+    header.printHeader("Mandril CLI");
   }
 }
 
