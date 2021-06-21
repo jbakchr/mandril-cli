@@ -1,15 +1,12 @@
-const Header = require("./components/header");
+const MainScreen = require("./screens/main-screen");
 
 class MandrilCLI {
-  constructor() {}
-
-  start() {
-    this.printMainScreen();
+  constructor() {
+    this.screen = new MainScreen();
   }
 
-  printMainScreen() {
-    const header = new Header();
-    header.printHeader("Mandril CLI");
+  start() {
+    this.screen.printScreen();
   }
 }
 

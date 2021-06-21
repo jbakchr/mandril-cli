@@ -1,8 +1,12 @@
 const figlet = require("figlet");
 
 class Header {
-  printHeader(text) {
-    console.log(figlet.textSync(text));
+  constructor(headerText) {
+    this.headerText = headerText;
+  }
+
+  printHeader() {
+    console.log(figlet.textSync(this.headerText));
   }
 }
 
