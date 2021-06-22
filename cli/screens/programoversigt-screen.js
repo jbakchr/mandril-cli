@@ -2,9 +2,9 @@ const { prompt } = require("enquirer");
 
 const Header = require("../components/header");
 
-class MainScreen {
+class ProgramoversigtScreen {
   constructor() {
-    this.header = new Header("MANDRIL CLI");
+    this.header = new Header("PROGRAMOVERSIGTEN");
   }
 
   printScreen() {
@@ -22,4 +22,4 @@ class MainScreen {
   }
 }
 
-module.exports = MainScreen;
+module.exports = ProgramoversigtScreen;
