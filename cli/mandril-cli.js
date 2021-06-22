@@ -25,6 +25,8 @@ class MandrilCLI {
         this.screen = new ProgramoversigtScreen();
         this.showScreen();
         break;
+      case "tilfældig":
+        this.screen.showProgramoversigt();
       default:
         console.log("End");
     }
