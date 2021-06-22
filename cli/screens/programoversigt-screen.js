@@ -1,6 +1,7 @@
 const { prompt } = require("enquirer");
 
 const Header = require("../components/header");
+const programoversigtData = require("../../data/programoversigt-data.json");
 
 class ProgramoversigtScreen {
   constructor() {
@@ -22,7 +23,10 @@ class ProgramoversigtScreen {
   }
 
   showProgramoversigt() {
-    console.log("Show programoversigt here");
+    console.log(`\nPROGRAMOVERSIGT #${1}`);
+    programoversigtData[0].oversigt.forEach((oversigt) => {
+      console.log(oversigt);
+    });
   }
 }
 
