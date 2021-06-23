@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "episode": "S1:E1",
     "oversigt": [
       "KL. 1980 : Henkogt dovendidrik slagter slagter etc.",
       "KL. 1603 : Mulde i knibe kommer og griber tobleronealf",
@@ -15,6 +16,7 @@
   },
   {
     "id": 2,
+    "episode": "S1:E2",
     "oversigt": [
       "23:30\t Delfin døbes i larmende Rockwool",
       "23.35\t Fremmelig Petri-skål kurer over grøn, grøn, grøn, grøn baaaketop",
@@ -23,6 +25,39 @@
       "23:45\t Højeste mode springer over, hvor gærdet er helt stift",
       "23:50\t Hval møder rosmatin & salvie i Læderstræde",
       "24:00\t Civilt ræ"
+    ]
+  },
+  {
+    "id": 3,
+    "episode": "S1:E3",
+    "oversigt": [
+      "23:30\t Sonja Oppenhagen sluger 12 D-Mark",
+      "23:35\t Dræsinebanden voldtager og skamferer Aladin",
+      "23:40\t Talentkonkurrence",
+      "23:55\t Vi ser på våben",
+      "23:56\t Lois Pasteurs sømandstrøje bliver vasket",
+      "23:56:30 To belgiske wafler underviser i judo",
+      "23:56:35 Sonja Oppenhagen skider 1200 penning",
+      "24:00\t Tak for iaften"
+    ]
+  },
+  {
+    "id": 4,
+    "episode": "S1:E4",
+    "oversigt": [
+      "23:28\t Pas på du er lidt for tidligt på den",
+      "23.30\t Godaften, velkommen i alle kanaler",
+      "23:31\t Noget med tusch",
+      "23:34\t Magi og granit",
+      "23:25\t Sysser Köning ælter baglæns",
+      "23:30\t Vi danser med el (Marcus Elberling opfører Angola som syngespil)",
+      "23:33\t Så er der afro quiz",
+      "23:35\t Maiken Wexø kommenterer fraklip fra Edinburgh tattoo",
+      "23:40\t Beige - Farve eller fænomen?",
+      "23:42\t Genudsendelse af programoversigten",
+      "23:50\t Et løg",
+      "23:55\t Løbe tør for idéer",
+      "24:00\t Tak for iaften"
     ]
   }
 ]

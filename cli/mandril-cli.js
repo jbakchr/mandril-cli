@@ -45,6 +45,7 @@ class MandrilCLI {
         this._screens[this.screensLength - 1].printHeader();
         this.showScreen(PROGRAMOVERSIGTEN__MAIN_OPTIONS);
         break;
+      case "hit me!":
       case "tilfældig":
         clear();
         this._screens[this.screensLength - 1].printHeader();
