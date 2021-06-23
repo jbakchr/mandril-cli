@@ -17,11 +17,18 @@ class ProgramoversigtScreen {
     return respone;
   }
 
-  showProgramoversigt() {
-    console.log(`\nPROGRAMOVERSIGT #${1}`);
-    programoversigtData[0].oversigt.forEach((oversigt) => {
+  showProgramoversigt(choice) {
+    const num =
+      choice === "random"
+        ? Math.floor(Math.random() * programoversigtData.length)
+        : choice;
+
+    console.log(`\nPROGRAMOVERSIGT #${num + 1}`);
+    console.log("--------------------------------");
+    programoversigtData[num].oversigt.forEach((oversigt) => {
       console.log(oversigt);
     });
+    console.log("--------------------------------");
   }
 }
 
