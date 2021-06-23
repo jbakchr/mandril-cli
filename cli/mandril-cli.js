@@ -14,12 +14,14 @@ class MandrilCLI {
     this.showScreen();
   }
 
+  get screensLength() {
+    return this._screens.length;
+  }
+
   async showScreen() {
     clear();
-    this._screens[this._screens.length - 1].printScreen();
-    const { choice } = await this._screens[
-      this._screens.length - 1
-    ].showPrompt();
+    this._screens[this.screensLength - 1].printScreen();
+    const { choice } = await this._screens[this.screensLength - 1].showPrompt();
     this.switchScreen(choice);
   }
 
@@ -31,7 +33,7 @@ class MandrilCLI {
         this.showScreen();
         break;
       case "tilfældig":
-        this._screens[this._screens.length - 1].showProgramoversigt();
+        this._screens[this.screensLength - 1].showProgramoversigt();
       default:
         console.log("End");
     }
