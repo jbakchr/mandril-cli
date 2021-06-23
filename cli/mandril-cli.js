@@ -15,8 +15,8 @@ class MandrilCLI {
   async showScreen() {
     clear();
     this.screen.printScreen();
-    const response = await this.screen.showPrompt();
-    this.switchScreen(response.choice);
+    const { choice } = await this.screen.showPrompt();
+    this.switchScreen(choice);
   }
 
   switchScreen(choice) {
