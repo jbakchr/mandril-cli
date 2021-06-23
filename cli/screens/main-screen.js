@@ -11,13 +11,8 @@ class MainScreen {
     this.header.printHeader();
   }
 
-  async showPrompt() {
-    const respone = await prompt({
-      type: "select",
-      name: "choice",
-      message: "vælg..",
-      choices: ["Programoversigt", "Citater"],
-    });
+  async showPrompt(option) {
+    const respone = await prompt(option);
     return respone;
   }
 }

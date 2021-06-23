@@ -12,13 +12,8 @@ class ProgramoversigtScreen {
     this.header.printHeader();
   }
 
-  async showPrompt() {
-    const respone = await prompt({
-      type: "select",
-      name: "choice",
-      message: "Jeg vælgeerr en ..",
-      choices: ["Tilfældig", "Specifik"],
-    });
+  async showPrompt(option) {
+    const respone = await prompt(option);
     return respone;
   }
 
