@@ -2,7 +2,7 @@ exports.MAIN_SCREEN_OPTIONS = {
   type: "select",
   name: "choice",
   message: "jeg vælgeerr ..",
-  choices: ["Eeenn Programoversigt!", "Citater"],
+  choices: ["Eeenn Programoversigt!", "Ses vi?"],
 };
 
 exports.PROGRAMOVERSIGTEN__MAIN_OPTIONS = {

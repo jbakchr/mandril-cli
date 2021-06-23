@@ -3,6 +3,8 @@ const clear = require("clear");
 const MainScreen = require("./screens/main-screen");
 const ProgramoversigtScreen = require("./screens/programoversigt-screen");
 
+const afslutningData = require("../data/afslutning-data.json");
+
 const {
   MAIN_SCREEN_OPTIONS,
   PROGRAMOVERSIGTEN__MAIN_OPTIONS,
@@ -50,8 +52,9 @@ class MandrilCLI {
         console.log();
         this.showScreen(PROGRAMOVERSIGTEN_RANDOM_OPTIONS);
         break;
-      default:
-        console.log("End");
+      case "ses vi?":
+        const randomIndex = Math.floor(Math.random() * afslutningData.length);
+        console.log(afslutningData[randomIndex]);
     }
   }
 }
