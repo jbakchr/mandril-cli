@@ -46,7 +46,7 @@ class MandrilCLI {
       case "tilfældig":
         clear();
         this._screens[this.screensLength - 1].printHeader();
-        this._screens[this.screensLength - 1].showProgramoversigt();
+        this._screens[this.screensLength - 1].showProgramoversigt("random");
         console.log();
         this.showScreen(PROGRAMOVERSIGTEN_RANDOM_OPTIONS);
         break;
