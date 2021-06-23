@@ -8,7 +8,7 @@ class ProgramoversigtScreen {
     this.header = new Header("PROGRAMOVERSIGTEN");
   }
 
-  printScreen() {
+  printHeader() {
     this.header.printHeader();
   }
 

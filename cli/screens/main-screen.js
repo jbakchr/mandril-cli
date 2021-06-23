@@ -7,7 +7,7 @@ class MainScreen {
     this.header = new Header("MANDRIL CLI");
   }
 
-  printScreen() {
+  printHeader() {
     this.header.printHeader();
   }
 
