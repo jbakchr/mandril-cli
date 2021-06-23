@@ -4,8 +4,10 @@ const MainScreen = require("./screens/main-screen");
 const ProgramoversigtScreen = require("./screens/programoversigt-screen");
 
 class MandrilCLI {
+  _screens = [];
+
   constructor() {
-    this.screen = new MainScreen();
+    this._screens.push(new MainScreen());
   }
 
   start() {
@@ -14,19 +16,22 @@ class MandrilCLI {
 
   async showScreen() {
     clear();
-    this.screen.printScreen();
-    const { choice } = await this.screen.showPrompt();
+    this._screens[this._screens.length - 1].printScreen();
+    const { choice } = await this._screens[
+      this._screens.length - 1
+    ].showPrompt();
     this.switchScreen(choice);
   }
 
   switchScreen(choice) {
     switch (choice.toLowerCase()) {
       case "programoversigt":
-        this.screen = new ProgramoversigtScreen();
+        const programOversigtScreen = new ProgramoversigtScreen();
+        this._screens.push(programOversigtScreen);
         this.showScreen();
         break;
       case "tilfældig":
-        this.screen.showProgramoversigt();
+        this._screens[this._screens.length - 1].showProgramoversigt();
       default:
         console.log("End");
     }
