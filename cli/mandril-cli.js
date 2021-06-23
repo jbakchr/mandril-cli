@@ -54,7 +54,7 @@ class MandrilCLI {
         break;
       case "ses vi?":
         const randomIndex = Math.floor(Math.random() * afslutningData.length);
-        console.log(afslutningData[randomIndex]);
+        console.log(afslutningData[randomIndex].end);
     }
   }
 }
