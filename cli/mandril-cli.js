@@ -5,7 +5,8 @@ const ProgramoversigtScreen = require("./screens/programoversigt-screen");
 
 const {
   MAIN_SCREEN_OPTIONS,
-  PROGRAMOVERSIGTEN_OPTIONS,
+  PROGRAMOVERSIGTEN__MAIN_OPTIONS,
+  PROGRAMOVERSIGTEN_RANDOM_OPTIONS,
 } = require("./prompt-options/prompt-options");
 
 class MandrilCLI {
@@ -16,6 +17,8 @@ class MandrilCLI {
   }
 
   start() {
+    clear();
+    this._screens[this.screensLength - 1].printHeader();
     this.showScreen(MAIN_SCREEN_OPTIONS);
   }
 
@@ -24,9 +27,6 @@ class MandrilCLI {
   }
 
   async showScreen(option) {
-    clear();
-    this._screens[this.screensLength - 1].printHeader();
-
     const { choice } = await this._screens[this.screensLength - 1].showPrompt(
       option
     );
@@ -36,13 +36,20 @@ class MandrilCLI {
 
   switchScreen(choice) {
     switch (choice.toLowerCase()) {
-      case "programoversigt":
+      case "eeenn programoversigt!":
+        clear();
         const programOversigtScreen = new ProgramoversigtScreen();
         this._screens.push(programOversigtScreen);
-        this.showScreen(PROGRAMOVERSIGTEN_OPTIONS);
+        this._screens[this.screensLength - 1].printHeader();
+        this.showScreen(PROGRAMOVERSIGTEN__MAIN_OPTIONS);
         break;
       case "tilfældig":
+        clear();
+        this._screens[this.screensLength - 1].printHeader();
         this._screens[this.screensLength - 1].showProgramoversigt();
+        console.log();
+        this.showScreen(PROGRAMOVERSIGTEN_RANDOM_OPTIONS);
+        break;
       default:
         console.log("End");
     }
