@@ -22,7 +22,9 @@ For now the main way to get this CLI up and up running is to follow the below in
 
 ## Prerequisites
 
-Before getting started you'll need to have the following software installed:
+Before getting started you'll need to have Node.js and Git installed. This software can be found and installed from here:
+
+### Needed software
 
 - [Node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
