@@ -4,6 +4,8 @@ The main purpose of this awesome 'Mandril CLI' is .. well .. to have some CLI fu
 
 > **WARNING!** This CLI contains the recipe for enriched uranium with pepper sauce and Charlotte Bircow ..
 
+---
+
 # Table of contents
 
 - [Getting started](#getting-started)
@@ -17,16 +19,12 @@ For now the main way to get this CLI up and up running is to follow the below in
 
 ## Prerequisites
 
----
-
 Before getting started you'll need to have the following software installed:
 
 - [Node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
 
 ## Clone project
-
----
 
 Firstly, clone this repo and 'cd' into it:
 
