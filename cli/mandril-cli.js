@@ -53,6 +53,12 @@ class MandrilCLI {
         console.log();
         this.showScreen(PROGRAMOVERSIGTEN_RANDOM_OPTIONS);
         break;
+      case "giv mig min sko tilbage, røv! (aka 'gå tilbage')":
+        clear();
+        this._screens.pop();
+        this._screens[this.screensLength - 1].printHeader();
+        this.showScreen(MAIN_SCREEN_OPTIONS);
+        break;
       case "ses vi?":
         const randomIndex = Math.floor(Math.random() * afslutningData.length);
         console.log(afslutningData[randomIndex].end);
