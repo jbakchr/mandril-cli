@@ -13,6 +13,7 @@ The main purpose of this awesome 'Mandril CLI' is .. well .. to have some CLI fu
   2. [Clone project](#clone-project)
   3. [Install dependencies](#install-dependencies)
   4. [Run the CLI](#run-the-cli)
+  5. [Enjoy!](#enjoy!)
 
 ---
 
