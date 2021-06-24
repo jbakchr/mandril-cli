@@ -9,9 +9,10 @@ The main purpose of this awesome 'Mandril CLI' is .. well .. to have some CLI fu
 # Table of contents
 
 - [Getting started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Clone project](#clone-project)
-  - [Install dependencies](#install-dependencies)
+  1. [Prerequisites](#prerequisites)
+  2. [Clone project](#clone-project)
+  3. [Install dependencies](#install-dependencies)
+  4. [Run the CLI](#run-the-cli)
 
 ---
 
