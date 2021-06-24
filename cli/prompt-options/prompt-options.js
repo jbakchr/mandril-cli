@@ -5,7 +5,7 @@ exports.MAIN_SCREEN_OPTIONS = {
   choices: ["Eeenn Programoversigt!", "Ses vi?"],
 };
 
-exports.PROGRAMOVERSIGTEN__MAIN_OPTIONS = {
+exports.PROGRAMOVERSIGTEN_MAIN_OPTIONS = {
   type: "select",
   name: "choice",
   message: "Jeg vælgeerr en ..",
