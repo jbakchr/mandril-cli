@@ -9,7 +9,7 @@ The main purpose of this awesome 'Mandril CLI' is .. well .. to have some CLI fu
 # Table of contents
 
 - [Getting started](#getting-started)
-  - [Prerequisite](#prerequisite)
+  - [Prerequisites](#prerequisites)
   - [Clone project](#clone-project)
   - [Install dependencies](#install-dependencies)
 
