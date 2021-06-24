@@ -13,6 +13,8 @@ The main purpose of this awesome 'Mandril CLI' is .. well .. to have some CLI fu
   - [Clone project](#clone-project)
   - [Install dependencies](#install-dependencies)
 
+---
+
 # Getting started
 
 For now the main way to get this CLI up and up running is to follow the below instructions.
@@ -48,3 +50,5 @@ To run the CLI run this command from the terminal:
 ```
 npm start
 ```
+
+---
