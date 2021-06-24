@@ -24,14 +24,12 @@ For now the main way to get this CLI up and up running is to follow the below in
 
 Before getting started you'll need to have Node.js and Git installed. This software can be found and installed from here:
 
-### Needed software
-
 - [Node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
 
 ## Clone project
 
-Firstly, clone this repo and 'cd' into it:
+Clone this repo and 'cd' into it:
 
 ```
 git clone https://github.com/jbakchr/mandril-cli.git
@@ -53,5 +51,9 @@ To run the CLI run this command from the terminal:
 ```
 npm start
 ```
+
+## Enjoy!
+
+Enjoy the hours of fun that this CLI will provide you and your family..
 
 ---
