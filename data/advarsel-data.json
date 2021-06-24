@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "episode": "S1:E1",
+    "advarsel": "Dette CLI indeholder calmium. Når CLI'et ikke virker længere bliver det en tikkende bombe under miljøet."
+  },
+  {
+    "id": 2,
+    "episode": "S1:E2",
+    "advarsel": "I dette CLI vises, hvordan man anvender engelsk salt, amerikansk olie og indisk bomuld i den daglige husholdning."
+  },
+  {
+    "id": 3,
+    "episode": "S1:E3",
+    "advarsel": "Dette CLI indeholder et lassotrick"
+  },
+  {
+    "id": 4,
+    "episode": "S1:E4",
+    "advarsel": "Dette CLI indeholder opskriften på beriget uran med pebersauce og Charlotte Bircow."
+  },
+  {
+    "id": 5,
+    "episode": "S1:E5",
+    "advarsel": "Dette CLI indeholder cement. Og det er tungt."
+  },
+  {
+    "id": 6,
+    "episode": "S1:E6",
+    "advarsel": "Dette CLI indeholder en scene, hvor ordet 'pære' siges. Det er den her scene."
+  }
+]

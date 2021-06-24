@@ -1,8 +1,10 @@
 const clear = require("clear");
+const chalk = require("chalk");
 
 const MainScreen = require("./screens/main-screen");
 const ProgramoversigtScreen = require("./screens/programoversigt-screen");
 
+const advarselsData = require("../data/advarsel-data.json");
 const afslutningData = require("../data/afslutning-data.json");
 
 const {
@@ -13,15 +15,27 @@ const {
 
 class MandrilCLI {
   _screens = [];
+  _warning = "";
 
   constructor() {
     this._screens.push(new MainScreen());
+    this._warning =
+      advarselsData[Math.floor(Math.random() * advarselsData.length)];
   }
 
   start() {
     clear();
     this._screens[this.screensLength - 1].printHeader();
+    this.printWarning();
     this.showScreen(MAIN_SCREEN_OPTIONS);
+  }
+
+  get warning() {
+    return this._warning.advarsel;
+  }
+
+  printWarning() {
+    console.log(`${chalk.bold.white("ADVARSEL!")}\n${this.warning}\n`);
   }
 
   get screensLength() {
@@ -57,6 +71,7 @@ class MandrilCLI {
         clear();
         this._screens.pop();
         this._screens[this.screensLength - 1].printHeader();
+        this.printWarning();
         this.showScreen(MAIN_SCREEN_OPTIONS);
         break;
       case "ses vi?":
